@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Beer and Weather</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="header">
+	    <h1 class="header__title">Beer and Weather <br><span class="header__title-part">Generator</span></h1>
+	</div>
+    <div class="container">
+        <p class="container__text">Select a beer and a weather condition:</p>
+        <div class="container__button">
+        <select id="beer" class="container__buttons" >
+            <option value="hoegaarden">Hoegaarden</option>
+            <option value="corona">Corona Extra</option>
+            <option value="grimbergen">Grimbergen</option>
+            <option value="guiness">Guinness</option>
+        </select>
+    
+        <select id="weather" class="container__buttons" >
+            <option value="sunny">Sunny (Damn Good!)</option>
+            <option value="rainy">Rainy (Not Good)</option>
+            <option value="windy">Windy (SHITTY!)</option>
+        </select>
+    
+        <button class="container__buttons_generator" onclick="generateText()" >Generate text</button>
+    
+        <p id="result"></p> 
+    </div>
+    </div>
+    <script src="./js/app.js"></script>
+    
+    
+    
+
+	
+</body>
+</html>
+
